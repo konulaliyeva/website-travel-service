@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import CheckDetails from "./pages/CheckDetails";
 
 function App() {
-const [select, setSelect] = useState(null);
+const [select, setSelect] = useState('Shaki');
   return (
     <div>
      <Routes>

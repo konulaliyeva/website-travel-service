@@ -9,8 +9,11 @@ import { HiLocationMarker } from "react-icons/hi";
 import { BsArrowLeft } from "react-icons/bs";
 function Details({ select }) {
   const navigate = useNavigate();
-
+ 
   const filtredData = data.filter((item) => item.region === select);
+
+
+
   return (
     <div className="relative w-full h-screen bg-zinc-900/60">
       <img

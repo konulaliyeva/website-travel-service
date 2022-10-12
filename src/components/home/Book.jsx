@@ -3,10 +3,8 @@ import { RiCustomerService2Fill } from "react-icons/ri";
 import { MdOutlineTravelExplore } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
-const Book = ({select,setSelect}) => {
-const navigate = useNavigate();
-
-
+const Book = ({ select, setSelect }) => {
+  const navigate = useNavigate();
 
   return (
     <div className="max-w-[1240px] mx-auto grid lg:grid-cols-3 gap-4 px-4 py-16">
@@ -34,9 +32,7 @@ const navigate = useNavigate();
             </button>
             <div>
               <h3 className="py-2">Booking Service</h3>
-              <p className="py-1 mx-4">
-              Plan your great journey here
-              </p>
+              <p className="py-1 mx-4">Plan your great journey here</p>
             </div>
           </div>
           <div className="flex flex-col lg:flex-row items-center text-center">
@@ -45,9 +41,7 @@ const navigate = useNavigate();
             </button>
             <div>
               <h3 className="py-2">Advising Service</h3>
-              <p className="py-1 mx-4">
-              Ready to help you till the end
-              </p>
+              <p className="py-1 mx-4">Ready to help you till the end</p>
             </div>
           </div>
         </div>
@@ -56,19 +50,21 @@ const navigate = useNavigate();
       <div>
         <div className="border text-center">
           <p className="pt-2">GET AN ADDITIONAL INFO</p>
-          <p className="py-4">12 HOURS LEFT</p>
+          <p className="py-4">Plan Your Journey!</p>
           <p className="bg-gray-800 text-gray-200 py-2">Check It Now</p>
         </div>
         <form className="w-full">
           <div className="flex flex-col my-2">
             <label>Destination</label>
-            <select className="border rounded-md p-2" onChange={(e)=>setSelect(e.target.value)}>
-              <option value='Shaki'>Shaki</option>
-              <option value='Gabala'>Gabala</option>
-              <option value='Shamakhi'>Shamakhi</option>
-              <option value='Oghuz'>Oghuz</option>
-              <option value='Mingachevir'>Mingachevir</option>
-
+            <select
+              className="border rounded-md p-2"
+              onChange={(e) => setSelect(e.target.value)}
+            >
+              <option value="Shaki">Shaki</option>
+              <option value="Gabala">Gabala</option>
+              <option value="Shamakhi">Shamakhi</option>
+              <option value="Oghuz">Oghuz</option>
+              <option value="Mingachevir">Mingachevir</option>
             </select>
           </div>
           <div className="flex flex-col my-4">
@@ -79,7 +75,9 @@ const navigate = useNavigate();
             <label>Check-Out</label>
             <input className="border rounded-md p-2" type="date" />
           </div>
-          <button className="w-full my-4" onClick={()=>navigate('/profile')}>Check Details</button>
+          <button className="w-full my-4" onClick={() => navigate("/profile")}>
+            Check Details
+          </button>
         </form>
       </div>
     </div>

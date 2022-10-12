@@ -27,7 +27,7 @@ export const data = [
     rooms: "1,2,3 & VIP",
     website: "https://www.marxalresort.az/",
     bcgimg:
-      "https://images.unsplash.com/photo-1565118531796-763e5082d113?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjV8fG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+      'https://images.unsplash.com/photo-1565118531796-763e5082d113?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjV8fG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60',
   },
   {
     id: 3,
@@ -42,7 +42,7 @@ export const data = [
     rooms: "resorts, villas, holiday homes",
     website: "https://sakitgol.az/",
     bcgimg:
-      "https://images.unsplash.com/photo-1557456170-0cf4f4d0d362?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG5hdHVyZSUyMGxha2V8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+      'https://images.unsplash.com/photo-1557456170-0cf4f4d0d362?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG5hdHVyZSUyMGxha2V8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
   },
   {
     id: 4,
@@ -50,7 +50,7 @@ export const data = [
     region: "Oghuz",
     price: "55",
     about:
-      " Golden Tree provides accommodation with a restaurant, free private parking and a garden.The accommodation features room service and free WiFi throughout the property.Guest rooms in the hotel are equipped with a flat-screen TV. At Golden Tree, each room comes with air conditioning and a private bathroom.",
+      'Golden Tree provides accommodation with a restaurant, free private parking and a garden.The accommodation features room service and free WiFi throughout the property.Guest rooms in the hotel are equipped with a flat-screen TV. At Golden Tree, each room comes with air conditioning and a private bathroom.',
     location: "Padar, Oghuz, Azerbaijan ",
     star: "4",
     rating: "4.0",
@@ -71,6 +71,6 @@ export const data = [
     rooms: "1,2 & single and double beds",
     website: "http://www.riverside.az/",
     bcgimg:
-      "https://images.unsplash.com/photo-419133203517-f3b3ed0ba2bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cml2ZXIlMjBzaWRlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      'https://images.unsplash.com/photo-419133203517-f3b3ed0ba2bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cml2ZXIlMjBzaWRlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
   },
 ];
