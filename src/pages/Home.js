@@ -6,13 +6,13 @@ import Land from '../components/home/Land';
 import Navbar from '../components/home/Navbar';
 import Book from '../components/home/Book';
 import Destinations from '../components/home/Destinations';
-function Home() {
+function Home({select, setSelect}) {
   return (
     <div>
       <Navbar/>
       <Land />
       <Resorts/>
-      <Book />
+      <Book select={select} setSelect={setSelect}/>
       <Destinations />
       <View/>
       <Footer />

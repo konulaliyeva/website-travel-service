@@ -1,13 +1,18 @@
 import React from "react";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import { MdOutlineTravelExplore } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
-const Book = () => {
+const Book = ({select,setSelect}) => {
+const navigate = useNavigate();
+
+
+
   return (
     <div className="max-w-[1240px] mx-auto grid lg:grid-cols-3 gap-4 px-4 py-16">
       <div className="lg:col-span-2 flex flex-col justify-evenly">
         <div>
-          <h2>Book for Slots</h2>
+          <h2>Check for Hotels & Resorts</h2>
           <p className="py-4">
             Do you want to explore Azerbaijan in your own time? Do you want to
             set your own itinerary? If so, wherever your interests lie, and
@@ -29,7 +34,7 @@ const Book = () => {
             </button>
             <div>
               <h3 className="py-2">Booking Service</h3>
-              <p className="py-1">
+              <p className="py-1 mx-4">
               Plan your great journey here
               </p>
             </div>
@@ -40,7 +45,7 @@ const Book = () => {
             </button>
             <div>
               <h3 className="py-2">Advising Service</h3>
-              <p className="py-1">
+              <p className="py-1 mx-4">
               Ready to help you till the end
               </p>
             </div>
@@ -50,19 +55,19 @@ const Book = () => {
 
       <div>
         <div className="border text-center">
-          <p className="pt-2">GET AN ADDITIONAL 10% OFF</p>
+          <p className="pt-2">GET AN ADDITIONAL INFO</p>
           <p className="py-4">12 HOURS LEFT</p>
-          <p className="bg-gray-800 text-gray-200 py-2">BOOK NOW AND SAVE</p>
+          <p className="bg-gray-800 text-gray-200 py-2">Check It Now</p>
         </div>
         <form className="w-full">
           <div className="flex flex-col my-2">
             <label>Destination</label>
-            <select className="border rounded-md p-2">
-              <option>Shaki</option>
-              <option>Gabala</option>
-              <option>Shamakhi</option>
-              <option>Oghuz</option>
-              <option>Guba</option>
+            <select className="border rounded-md p-2" onChange={(e)=>setSelect(e.target.value)}>
+              <option value='Shaki'>Shaki</option>
+              <option value='Gabala'>Gabala</option>
+              <option value='Shamakhi'>Shamakhi</option>
+              <option value='Oghuz'>Oghuz</option>
+              <option value='Mingachevir'>Mingachevir</option>
 
             </select>
           </div>
@@ -74,7 +79,7 @@ const Book = () => {
             <label>Check-Out</label>
             <input className="border rounded-md p-2" type="date" />
           </div>
-          <button className="w-full my-4">Book</button>
+          <button className="w-full my-4" onClick={()=>navigate('/profile')}>Check Details</button>
         </form>
       </div>
     </div>

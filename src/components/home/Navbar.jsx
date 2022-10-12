@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { BsPerson } from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
-import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import {
   FaFacebook,
@@ -32,11 +31,7 @@ const Navbar = () => {
         <li>Destinations</li>
         <li>View</li>
       </ul>
-      <div className="hidden md:flex">
-        <Link to="/profile">
-          <BsPerson size={30} cursor="pointer" />
-        </Link>
-      </div>
+      
 
       {/* Hamburger */}
       <div onClick={handleNav} className="md:hidden z-10">
