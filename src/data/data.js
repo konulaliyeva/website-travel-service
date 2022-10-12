@@ -71,6 +71,6 @@ export const data = [
     rooms: "1,2 & single and double beds",
     website: "http://www.riverside.az/",
     bcgimg:
-      'https://images.unsplash.com/photo-419133203517-f3b3ed0ba2bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cml2ZXIlMjBzaWRlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
+    'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60'
   },
 ];
