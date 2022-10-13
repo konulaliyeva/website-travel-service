@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { BsPerson } from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { useNavigate } from "react-router-dom";
@@ -10,7 +9,7 @@ import {
   FaPinterest,
   FaYoutube,
 } from "react-icons/fa";
-
+import { HashLink as Link } from "react-router-hash-link";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [logo, setLogo] = useState(false);
@@ -24,14 +23,23 @@ const Navbar = () => {
       <div>
         <h1 className={logo ? "hidden" : "block"}>Tour Service</h1>
       </div>
-      <ul className="hidden md:flex">
-        <li>Home</li>
-        <li>Resorts</li>
-        <li>Book</li>
-        <li>Destinations</li>
-        <li>View</li>
+      <ul className="hidden md:flex cursor-pointer">
+        <li>
+          <Link to="#home">Home</Link>
+        </li>
+        <li>
+          <Link to="#resort">Resorts</Link>
+        </li>
+        <li>
+          <Link to="#info">Info</Link>
+        </li>
+        <li>
+          <Link to="#destination">Destinations</Link>
+        </li>
+        <li>
+          <Link to="#view">View</Link>
+        </li>
       </ul>
-      
 
       {/* Hamburger */}
       <div onClick={handleNav} className="md:hidden z-10">
@@ -53,21 +61,59 @@ const Navbar = () => {
       >
         <ul>
           <h1>Tour Service</h1>
-          <li className="border-b">Home</li>
-          <li className="border-b">Resorts</li>
-          <li className="border-b">Book</li>
-          <li className="border-b">Travel</li>
-          <li className="border-b">View</li>
 
+          <li className="border-b">
+            <Link to="#home">Home</Link>
+          </li>
+          <li className="border-b">
+            <Link to="#resort">Resorts</Link>
+          </li>
+          <li className="border-b">
+            <Link to="#book">Info</Link>
+          </li>
+          <li className="border-b">
+            <Link to="#destination">Destinations</Link>
+          </li>
+          <li className="border-b">
+            <Link to="#view">view</Link>
+          </li>
           <div className="flex flex-col">
             <button onClick={() => navigate("/profile")}>Login</button>
           </div>
           <div className="flex justify-between my-6">
-            <FaFacebook className="icon" />
-            <FaTwitter className="icon" />
-            <FaYoutube className="icon" />
-            <FaPinterest className="icon" />
-            <FaInstagram className="icon" />
+          <a
+              href="https://www.instagram.com/visitazerbaijan/?hl=en"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaFacebook className="icon" />
+            </a>
+            <a
+              href="https://twitter.com/azerbaijantour?lang=en"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              <FaTwitter className="icon" />
+            </a>
+            <a
+              href="https://www.youtube.com/c/ExperienceAzerbaijan/channels"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaYoutube className="icon" />
+            </a>
+            <a
+              href="https://www.pinterest.com/journalofnomads/azerbaijan-travel/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaPinterest className="icon" />
+            </a>
+
+            <a href="https://www.instagram.com/visitazerbaijan/?hl=en">
+              <FaInstagram className="icon" />
+            </a>
           </div>
         </ul>
       </div>

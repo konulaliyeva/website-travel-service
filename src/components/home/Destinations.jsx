@@ -4,7 +4,7 @@ import SelectsCard from './SelectsCard';
 
 const Destinations = () => {
   return (
-    <div className='max-w-[1240px] mx-auto px-4 py-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-4'>
+    <div className='max-w-[1240px] mx-auto px-4 py-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-4' id='destination'>
 
     <SelectsCard bg='https://storage.googleapis.com/wzukusers/user-26138364/images/58fe2b643210bLT2R61v/Quba_Rixos_d400.jpg' text='Guba' />
     <SelectsCard bg="https://storage.googleapis.com/wzukusers/user-26138364/images/591a0ed0497d4zRz3C4b/Nohur_Gol_d400.jpg" text='Gabala' />

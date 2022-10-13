@@ -14,16 +14,43 @@ const Footer = () => {
         <div className="sm:flex text-center justify-between items-center">
           <h1>Tour Service</h1>
           <div className="flex justify-between w-full sm:max-w-[280px] my-4">
-            <FaFacebook className="icon" />
-            <FaTwitter className="icon" />
-            <FaYoutube className="icon" />
-            <FaPinterest className="icon" />
-            <FaInstagram className="icon" />
+            <a
+              href="https://www.instagram.com/visitazerbaijan/?hl=en"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaFacebook className="icon" />
+            </a>
+            <a
+              href="https://twitter.com/azerbaijantour?lang=en"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              <FaTwitter className="icon" />
+            </a>
+            <a
+              href="https://www.youtube.com/c/ExperienceAzerbaijan/channels"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaYoutube className="icon" />
+            </a>
+            <a
+              href="https://www.pinterest.com/journalofnomads/azerbaijan-travel/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaPinterest className="icon" />
+            </a>
+
+            <a href="https://www.instagram.com/visitazerbaijan/?hl=en">
+              <FaInstagram className="icon" />
+            </a>
           </div>
         </div>
         <div className="flex justify-between">
           <p>Copyright © 2022 Experience Azerbaijan™. All rights reserved.</p>
-         
         </div>
       </div>
     </div>

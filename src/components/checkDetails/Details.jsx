@@ -1,18 +1,13 @@
 import React from "react";
-import {
-  AiFillAccountBook,
-  AiFillStar,
-} from "react-icons/ai";
+import { AiFillAccountBook, AiFillStar } from "react-icons/ai";
 import { data } from "../../data/data.js";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { HiLocationMarker } from "react-icons/hi";
-import { BsArrowLeft } from "react-icons/bs";
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 function Details({ select }) {
   const navigate = useNavigate();
- 
+
   const filtredData = data.filter((item) => item.region === select);
-
-
 
   return (
     <div className="relative w-full h-screen bg-zinc-900/60">
@@ -54,24 +49,25 @@ function Details({ select }) {
                 {filtredData[0].location}
               </span>
             </p>
-            <p className="flex items-center mb-2 mt-2 mx-4 font-merriweather text-sm">
-              For detailed info:{" "}
-              <a
-                className=" text-sm mx-2 text-[blue] cursor-pointer"
-                href={filtredData[0].website}
-              >
-                Visit here
-              </a>
-            </p>
           </div>
-          <button
-            className="w-full py-3 mt-8 bg-indigo-600 hover:bg-indigo-500 relative text-white flex justify-center items-center"
-            onClick={() => navigate("/")}
-          >
-              <BsArrowLeft className="mx-2" size={20}/>
-            Back
-          </button>
-
+          <div className="flex justify-between ">
+            <button
+              className="w-[150px] py-3 mt-8 bg-red-600 hover:bg-red-700 relative text-white flex justify-center items-center rounded-md"
+              onClick={() => navigate("/")}
+            >
+              <BsArrowLeft className="mx-2" size={20} />
+              Back
+            </button>
+            <a 
+              className="w-[150px] py-3 mt-8 bg-amber-500 hover:bg-amber-600 relative text-white flex justify-center items-center rounded-md "
+             href={filtredData[0].book}
+             target="_blank"
+             rel='noreferrer'
+            >
+              Book
+              <BsArrowRight className="mx-2" size={20} />
+            </a>
+          </div>
         </form>
       </div>
     </div>

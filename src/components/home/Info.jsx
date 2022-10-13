@@ -3,11 +3,11 @@ import { RiCustomerService2Fill } from "react-icons/ri";
 import { MdOutlineTravelExplore } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
-const Book = ({ select, setSelect }) => {
+const Info = ({ select, setSelect }) => {
   const navigate = useNavigate();
 
   return (
-    <div className="max-w-[1240px] mx-auto grid lg:grid-cols-3 gap-4 px-4 py-16">
+    <div className="max-w-[1240px] mx-auto grid lg:grid-cols-3 gap-4 px-4 py-16" id="info">
       <div className="lg:col-span-2 flex flex-col justify-evenly">
         <div>
           <h2>Check for Hotels & Resorts</h2>
@@ -49,7 +49,7 @@ const Book = ({ select, setSelect }) => {
 
       <div>
         <div className="border text-center">
-          <p className="pt-2">GET AN ADDITIONAL INFO</p>
+          <p className="pt-2">GET ADDITIONAL INFO</p>
           <p className="py-4">Plan Your Journey!</p>
           <p className="bg-gray-800 text-gray-200 py-2">Check It Now</p>
         </div>
@@ -67,14 +67,7 @@ const Book = ({ select, setSelect }) => {
               <option value="Mingachevir">Mingachevir</option>
             </select>
           </div>
-          <div className="flex flex-col my-4">
-            <label>Check-In</label>
-            <input className="border rounded-md p-2" type="date" />
-          </div>
-          <div className="flex flex-col my-2">
-            <label>Check-Out</label>
-            <input className="border rounded-md p-2" type="date" />
-          </div>
+       
           <button className="w-full my-4" onClick={() => navigate("/profile")}>
             Check Details
           </button>
@@ -84,4 +77,4 @@ const Book = ({ select, setSelect }) => {
   );
 };
 
-export default Book;
+export default Info;

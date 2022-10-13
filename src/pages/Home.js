@@ -4,18 +4,22 @@ import Resorts from '../components/home/Resorts';
 import Footer from '../components/home/Footer';
 import Land from '../components/home/Land';
 import Navbar from '../components/home/Navbar';
-import Book from '../components/home/Book';
+import Info from '../components/home/Info';
 import Destinations from '../components/home/Destinations';
+
+
+
 function Home({select, setSelect}) {
   return (
     <div>
       <Navbar/>
       <Land />
-      <Resorts/>
-      <Book select={select} setSelect={setSelect}/>
+       <Resorts/> 
+      <Info select={select} setSelect={setSelect}/>
       <Destinations />
       <View/>
       <Footer />
+  
     </div>
   );
 }

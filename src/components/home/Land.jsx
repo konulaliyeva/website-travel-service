@@ -3,7 +3,7 @@ import beachVid from '../../assets/tourism.mp4';
 
 const Land = () => {
   return (
-    <div className='w-full h-screen relative'>
+    <div className='w-full h-screen relative' id='home'>
       <video
         className='w-full h-full object-cover'
         src={beachVid}
